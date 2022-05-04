@@ -1051,7 +1051,7 @@
     tslib "2.3.1"
     uuid "8.3.2"
 
-"@tsed/components-scan@6.114.4":
+"@tsed/components-scan@6.114.4", "@tsed/components-scan@^6.114.4":
   version "6.114.4"
   resolved "https://registry.yarnpkg.com/@tsed/components-scan/-/components-scan-6.114.4.tgz#0b690498f7f1f5b5ca1d63e5d9008bfa778404e5"
   integrity sha512-sfnNYAT7x3Tpfz0gwT5dZPKUUi1OEwxeP9MXd6BuTSAtLHgTMrwuaoN7r8DTS8PD/wHViE45/4zxfm5Ku05izg==
@@ -1426,6 +1426,11 @@
   integrity sha512-X3HPWTwXRerBZS7Mo1k6vMVR1Z6zmJcDVn5O/31whe0tnjE4te6ZJSJGq1RiqHPjzPdMTfjCFogDJmwng9xHaQ==
   dependencies:
     "@types/superagent" "*"
+
+"@types/uuid@^8.3.4":
+  version "8.3.4"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.3.4.tgz#bd86a43617df0594787d38b735f55c805becf1bc"
+  integrity sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==
 
 "@types/yargs-parser@*":
   version "21.0.0"

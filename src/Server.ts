@@ -8,8 +8,7 @@ import cookieParser from "cookie-parser";
 import methodOverride from "method-override";
 import cors from "cors";
 import "@tsed/ajv";
-import {config} from "./config";
-import * as rest from "./controllers/rest";
+import {config} from "./config/index.js";
 
 @Configuration({
   ...config,
@@ -17,11 +16,6 @@ import * as rest from "./controllers/rest";
   httpPort: process.env.PORT || 8083,
   httpsPort: false, // CHANGE
   componentsScan: false,
-  mount: {
-    "/rest": [
-      ...Object.values(rest)
-    ]
-  },
   middlewares: [
     cors(),
     cookieParser(),
@@ -30,16 +24,14 @@ import * as rest from "./controllers/rest";
     bodyParser.json(),
     bodyParser.urlencoded({
       extended: true
-    })  ],
+    })
+  ],
   views: {
     root: join(process.cwd(), "../views"),
     extensions: {
       ejs: "ejs"
     }
-  },
-  exclude: [
-    "**/*.spec.ts"
-  ]
+  }
 })
 export class Server {
   @Inject()
