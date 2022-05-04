@@ -2,7 +2,7 @@ import {registerProvider} from "@tsed/di";
 // import {createConnection} from "@tsed/typeorm";
 import {DataSource} from "typeorm";
 import {Logger} from "@tsed/logger";
-import { getTypeOrmConfig } from "../config/dbConfig";
+import {getTypeOrmConfig} from "../config/dbConfig.js";
 
 export const TYPEORM_DATA_SOURCE = Symbol.for("TypeormDataSource");
 export const TypeormDataSource = new DataSource(getTypeOrmConfig());

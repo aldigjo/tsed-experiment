@@ -1,7 +1,6 @@
-import { DataSourceOptions } from "typeorm";
-import { v4 } from "uuid";
-import { isProduction } from "./envs";
-import fs from "fs";
+import {DataSourceOptions} from "typeorm";
+import {v4} from "uuid";
+import {isProduction} from "./envs/index.js";
 
 export const ORM_NAME = isProduction ? "disco-orm" : "disco-test-orm";
 
